@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.faq-container {
+    display: flex;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-right: 20px; /* Space between sidebar and content */
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; /* Center the title */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    /* margin: 12px 0; Added vertical margin */
+    cursor: pointer;
+    font-size: 14px;
+    /* padding: 8px; Added padding for touch area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.5s; /* Smooth transition */
+}
+
+.sidebar ul li:hover {
+    background-color: #97e5a5; /* Highlight on hover */
+    color: white; /* Change text color on hover */
+}
+
+.faq-content {
+    width: 75%;
+    padding-left: 20px;
+}
+
+.faq-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.faq-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.faq-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.faq-item span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.faq-item:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column; /* Stack sidebar and content vertically */
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for sidebar */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Space below sidebar */
+    }
+
+    .faq-content {
+        width: 100%; /* Full width for content */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .faq-item {
+        padding: 15px; /* Increase padding for touch targets */
+    }
+}

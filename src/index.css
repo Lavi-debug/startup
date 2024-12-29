@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .animate-slideUp {
+    animation: slideUp 1s ease-in-out forwards;
+  }
+
+  .animate-slideDown {
+    animation: slideDown 1s ease-in-out forwards;
+  }
+}
+
+
+
+@keyframes slide-up-right {
+  0% {
+    bottom: 30%;
+    left: 0;
+  }
+  100% {
+    bottom: 100%;
+    left: 25%;
+  }
+}
+
+@layer utilities {
+  .animate-slide-up-right {
+    animation: slide-up-right 8s linear infinite;
+  }
+}
+
+@keyframes slide-up-right1 {
+  0% {
+    bottom: 0;
+    left: 30%;
+  }
+  100% {
+    bottom: 100%;
+    left: 60%;
+  }
+}
+
+@layer utilities {
+  .animate-slide-up-right1 {
+    animation: slide-up-right1 6s linear infinite;
+  }
+}
+
+
+@keyframes slide-up-right2 {
+  0% {
+    bottom: 0;
+    left: 70%;
+  }
+  100% {
+    bottom: 100%;
+    left: 90%;
+  }
+}
+
+@layer utilities {
+  .animate-slide-up-right2 {
+    animation: slide-up-right2 7.5s linear infinite;
+  }
+}
+
+@keyframes slide-up-rightcoin {
+  0% {
+    bottom: 100%;
+    left: 18%;
+  }
+  100% {
+    bottom: 0;
+    left: 18%;
+  }
+}
+
+@layer utilities {
+  .animate-slide-up-rightcoin {
+    animation: slide-up-rightcoin 5s linear infinite;
+  }
+}
+
+@keyframes slide-up-rightcoin1 {
+  0% {
+    bottom: 100%;
+    left: 60%;
+  }
+  100% {
+    bottom: 0;
+    left: 60%;
+  }
+}
+
+@layer utilities {
+  .animate-slide-up-rightcoin1 {
+    animation: slide-up-rightcoin1 5s linear infinite;
+  }
+}
+@keyframes slide-up-rightcoin2 {
+  0% {
+    bottom: 100%;
+    left: 80%;
+  }
+  100% {
+    bottom: 0;
+    left: 80%;
+  }
+}
+
+@layer utilities {
+  .animate-slide-up-rightcoin2 {
+    animation: slide-up-rightcoin2 4s linear infinite;
+  }
+}
+
+@media (min-width: 1400px) {
+  .landingherothreeleft {
+    width: 100%; /* Example styling */
+  }
+}
+
